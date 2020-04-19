@@ -1,0 +1,1027 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #303030;
+    font-family: 'Chivo', sans-serif;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+  }
+
+.main-wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    color: #222222;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #c0141c;
+    color: #fff;
+}
+
+.top {
+    border-bottom: 1px solid rgba(48, 48, 48, 0.15);
+    color: #fff;
+}
+
+.top .container {
+    display: flex;
+    height: 100px;
+    background-color: #c0141c;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.top .container .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.top .container .logo img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+}
+
+.top .container .logo .logo-text {
+    font-family: "Barlow - Extra Bold";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 25px;
+}
+
+.top .container .search {
+    display: flex;
+    align-items: center;
+}
+
+.top .container .search input {
+    /* Style for "form.bg" */
+    width: 530px;
+    height: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    text-indent: 25px;
+}
+
+.top .container .search .search-icon {
+    background: #000;
+    display: block;
+    height: 14px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(48, 48, 48, 0.2);
+    padding: 15px;
+    position: relative;
+}
+
+.user-profile p {
+    display: block;
+    position: absolute;
+    background-color: #ffaa22;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    left: -10px;
+    bottom: 1px;
+}
+
+.user-profile span {
+    position: absolute;
+    left: 7px;
+    bottom: -3px;
+    font-size: 12px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    height: 100%;
+    color: #fff;
+}
+
+nav .menu li {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+}
+
+nav .menu li:hover,
+.active {
+    background-color: #ffaa22;
+}
+
+nav .menu li a {
+    padding-left: 25px;
+    padding-right: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+nav .menu li a:hover {
+    display: inline-block;
+    border-left: 5px solid #303030;
+}
+
+nav .menu .active a {
+    display: inline-block;
+    border-left: 5px solid #303030;
+}
+
+nav .container .phone i {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+nav .container a {
+    color: #fff;
+}
+
+.hero {
+    background: url('../img/bg-main.png') no-repeat center center/cover;
+    height: 600px;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    right: 250px;
+    top: 180px;
+    text-align: right;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: Barlow;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    /* Style for "bnt.bg" */
+    width: 158px;
+    height: 50px;
+    background-color: #ffa428;
+    color: #ffffff;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.hero-content .btn:hover {
+    color: #ffa428;
+    background-color: #ffffff;
+}
+
+.top-banners .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container .banner-1 {
+    background: url('../img/bg-steering.png') no-repeat center center/cover;
+    width: 280px;
+    height: 430px;
+    position: absolute;
+    top: -120px;
+}
+
+.container .banner-2 {
+    background: url('../img/bg-sail.png') no-repeat center center/cover;
+    width: 430px;
+    height: 215px;
+}
+
+.container .banner-3 {
+    background: url('../img/bg-new-products.png') no-repeat center center/cover;
+    width: 430px;
+    height: 215px;
+}
+
+.cloud-deal {
+    background: url('../img/bg-deal.png') no-repeat center center/auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 230px;
+    height: 230px;
+}
+
+.container .banner-2,
+.container .banner-3 {
+    top: -20px;
+}
+
+.banner-1 .cloud-deal {
+    margin-top: 175px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner-2 {
+    margin-left: 300px;
+    position: absolute;
+}
+
+.banner-2 h3 span {
+    color: #db101b;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+
+}
+
+.banner-3 h3 span {
+
+    color: #00b765;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.banner-2 .content-block,
+.banner-3 .content-block {
+    position: relative;
+    margin-left: 25px;
+    margin-top: 60px;
+}
+
+.banner-2 .content-block h3 span,
+.banner-3 .content-block h3 span {
+    display: inline-block;
+    margin-bottom: 19px;
+}
+
+.icon {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    background: #ffa428;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.icon i {
+    position: absolute;
+    left: 11px;
+    top: 7px;
+}
+
+
+.banner-3 {
+    position: absolute;
+    right: 0px;
+}
+
+.cloud-deal h3 {
+
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.cloud-deal h3:first-child {
+    padding-top: 50px;
+}
+
+.cloud-deal .deal-price {
+    color: #ffa428;
+    font-family: "Cabin Sketch";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.main-content .container .offers-1{
+    margin-top: 215px;
+    display: flex;
+}
+
+.offers-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers-1 .left {
+    margin-top: 115px;
+    width: 280px;
+}
+
+.aside-panel {
+    height: 57px;
+    display: flex;
+    color: #222222;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #fff;
+}
+
+.aside-panel p {
+    display: inline-block;
+    margin-top: 17px;
+    border-left: 5px solid #ffa428;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.left .special-products {
+    background-color: #fff;
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+
+.left .special-products div {
+    display: flex;
+    align-items: center;
+}
+
+.left .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.left .special-products img {
+    display: block;
+    width: 75px;
+    margin: 0 12px;
+}
+
+.left .special-products .price {
+
+    font-family: "Barlow - Semi Bold";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 100px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+.btn-black {
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    background-color: #222222;
+    margin: 0 auto;
+    padding-top: 13px;
+    color: #fff;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.btn-black:hover {
+    background-color: #fff;
+    color: #222222;
+    border: 2px solid #222222;
+}
+
+.deal-box .aside-panel {
+    margin-top: 20px;
+}
+
+.deal-box .aside-panel p {
+    border-left: 5px solid #1381e8;
+}
+
+.good-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #fff;
+}
+
+.good-card .description {
+    margin-top: 0;
+    padding-left: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.description .type {
+    font-family: Chivo;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.good-card .description h3 {
+    color: #222222;
+    font-family: Chivo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.good-card .deal-time {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+.good-card .description .reviews {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.reviews i {
+    color: #ffaa22;
+    padding-top:13px;
+    margin-right: 5px;
+}
+
+.reviews p {
+    margin-left: 10px;
+    color: #164da8;
+    font-family: Chivo;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.description .price {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Barlow - Semi Bold";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.description .price .red-price {
+    color: #db101b
+}
+
+.description .price .grey-price {
+    color: #999999;
+    padding-left: 8px;
+}
+
+.deal-time div {
+    flex: 1;
+    width: 50px;
+    margin: 0 10px;
+}
+
+.deal-time div p {
+    margin: 0;
+}
+
+.deal-time div .counter {
+    background-color: #1381e8;
+    color: #ffffff;
+    font-family: Chivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 0;
+    padding-left: 11px;
+}
+
+.deal-time div .measure {
+    display: block;
+    color: #999999;
+    font-family: Chivo;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.right {
+    width: 880px;
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-top: 2px solid #222222;
+}
+
+.panel-heading h3 {
+    display: inline-block;
+    border-left: 5px solid #ffa428;
+    padding-left: 20px;
+    font-family: "Barlow - Semi Bold";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.panel-heading .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 68px;
+}
+
+.panel-heading .icons i {
+    background-color: #dddddd;
+    border-radius: 50%;
+    padding: 8px 11px;
+    color: #fff;
+}
+
+.panel-heading .icons i:last-child {
+    background-color: #222222;
+    padding: 8px 10px;
+}
+
+.panel-heading .icons i:last-child::before {
+    padding-left: 2px;
+}
+
+.trending-products {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+}
+
+.trending-products .good-card {
+    max-width: 280px;
+}
+
+.slider-switch {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.slider-switch .dot-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 55px;
+    height: 10px;
+    align-items: center;
+}
+
+.slider-switch .dot-container div {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.slider-switch .dot-container div:first-child {
+        width: 7px;
+        height: 7px;
+        background-color: #ddd;
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 1px;
+}
+
+.trending-banner {
+    background: url('../img/bg-sale.png') no-repeat center top/cover;
+    height: 215px;
+    color: #ffffff;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.trending-banner .cloud-deal {
+    margin: 0 auto;
+}
+
+.trending-banner h3:first-child {
+    padding-top: 45px;
+}
+
+.bestseller-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestseller-products .column div:first-child {
+    margin-bottom: 20px;
+}
+
+.bestseller-products .good-card {
+    width: 430px;
+    height: 175px;
+}
+
+.bestseller-products .good-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.bestseller-products .good-card img {
+    width: 125px;
+    height: 125px;
+}
+
+.offers-2 {
+    display: flex;
+}
+
+.offers-2 .left {
+    width: 280px;
+}
+
+.aside-brands {
+    margin-top: 20px;
+}
+
+.aside-brands .button-wrapper {
+    border-top: none;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+.brands {
+    width: 280px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.brands .column {
+    border: 1px solid rgba(234, 234, 234, 1);
+    width: 140px;
+    text-align: center;
+}
+
+.brands .brand-box {
+    display: block;
+    height: 140px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+.brands .brand-box img {
+    padding-top: 40px;
+}
+
+.offers-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers-2 .left .aside-panel {
+    margin-top: 20px;
+}
+
+.aside-community {
+    width: 280px;
+    background-color: #fff;
+    border-left: 1px solid rgba(234, 234, 234, 1);
+    border-right: 1px solid rgba(234, 234, 234, 1);
+}
+
+.aside-community p {
+    display: inline-block;
+    padding: 0 15px;
+    font-family: Chivo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.aside-community form .form-group {
+    padding: 15px;
+}
+
+.aside-community .button-wrapper {
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+
+.aside-blog {
+    text-align: center;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #fff;
+    border-top: none;
+}
+
+.aside-blog .content {
+    padding: 25px;
+}
+
+.aside-blog .content p, 
+.aside-blog .content h3 {
+    text-align: left;
+}
+
+.aside-blog .read-more {
+
+    color: #ffa428;
+    font-family: Chivo;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.offer-banner {
+    background: url('../img/bg-offer.png') no-repeat center center/cover;
+    color: #ffffff;
+    font-family: "Barlow - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    height: 215px;
+    padding-left: 25px;
+}
+
+.offer-banner p {
+    color: #ffa428;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
+.panel-heading .panel-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.panel-heading .panel-menu li a {
+    padding-left: 29px;
+    color: #999999;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.panel-heading .panel-menu li a:hover,
+.panel-heading .panel-menu li #clicked {
+    color: #222222;
+}
+
+.latest-products {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latest-products .good-card {
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    margin-bottom: 200px;
+}
+
+.bottom {
+    position: relative;
+}
+
+.bottom .container {
+    margin: 0 auto;
+}
+
+.bottom .container .social{
+
+    position: absolute;
+    top: -60px;
+    width: 1180px;
+    height: 150px;
+    background-color: #c0141c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    background: url('../img/newsletter.png') no-repeat;
+}
+
+.social .form-social h3 {
+    color: #ffffff;
+    font-family: "Barlow - Semi Bold";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.social form {
+    position: relative;
+    padding-right: 200px;
+}
+.social form input {
+width: 430px;
+height: 50px;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+background-color: #ffffff;
+}
+
+.social form .btn-subscribe {
+    display: inline-block;
+    height: 52px;
+    position: absolute;
+    padding-left: 70px;
+}
+
+.social .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    width: 160px;
+    margin-right: 30px;
+}
+
+.social .social-icons div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+}
+
+.social .social-icons i {
+    color: #fff;
+    padding: 17px 17px;
+}
+
+footer {
+    height: 800px;
+    color: #999999;
+    background-color: #222222;
+    font-family: Chivo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+footer .bottom-offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-offers p {
+    display: inline-block;
+    width: 380px;
+    height: 50px;
+    background-color: #303030;
+    color: #ffffff;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 150px;
+}
+
+footer .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .items div ul {
+    list-style: none;
+}
+
+footer a {
+    color: #999999;
+}
+
+footer .items .contact-us a {
+    padding-left: 5px;
+}
+
+.copy {
+    height: 115px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy div {
+    background: url('../img/payment.png') no-repeat center center/cover;
+    /* Style for "i.payment" */
+width: 192px;
+height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
